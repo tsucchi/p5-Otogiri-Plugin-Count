@@ -10,6 +10,7 @@ use Otogiri::Plugin;
 
 our @EXPORT = qw(count);
 
+# this code is taken from Teng::Plugin::Count
 sub count {
     my ($self, $table, $column, $where, $opt) = @_;
 
