@@ -1,5 +1,5 @@
 name = "Otogiri-Plugin-Count"
-# badges = ["travis"]
+badges = ["travis", "coveralls"]
 authority="cpan:TSUCCHI"
 
 module_maker="ModuleBuildTiny"
