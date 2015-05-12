@@ -10,12 +10,13 @@ use Otogiri::Plugin;
 
 our @EXPORT = qw(count);
 
-# this code is taken from Teng::Plugin::Count
 sub count {
     my ($self, $table, $column, $where, $opt) = @_;
 
-    if (ref $column eq 'HASH') {
-        Carp::croak('Do not pass HashRef to second argument. Usage: $db->count($table[, $column[, $where[, $opt]]])');
+    if ( ref $column eq 'HASH' ) {
+        $opt = $where;
+        $where = $column;
+        $column = '*';
     }
 
     $column ||= '*';
@@ -44,6 +45,7 @@ Otogiri::Plugin::Count - Otogiri plugin to count rows in database.
     my $count = $db->count('some_table'); # SELECT COUNT(*) FROM some_table
 
     my $count2 = $db->count('some_table', 'column1', { group_id => 123 }); # SELECT COUNT(column1) WHERE group_id=123
+    my $count3 = $db->count('some_table', { group_id => 123 });            # same as above
 
 =head1 DESCRIPTION
 
