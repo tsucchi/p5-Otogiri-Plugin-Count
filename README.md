@@ -11,7 +11,7 @@ Otogiri::Plugin::Count - Otogiri plugin to count rows in database.
     my $count = $db->count('some_table'); # SELECT COUNT(*) FROM some_table
 
     my $count2 = $db->count('some_table', 'column1', { group_id => 123 }); # SELECT COUNT(column1) WHERE group_id=123
-    my $count3 = $db->count('some_table', { group_id => 123 });            # same as above
+    my $count3 = $db->count('some_table', { group_id => 123 });            # SELECT COUNT(*) WHERE group_id=123
 
 # DESCRIPTION
 
