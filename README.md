@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tsucchi/p5-Otogiri-Plugin-Count.png?branch=master)](https://travis-ci.org/tsucchi/p5-Otogiri-Plugin-Count) [![Coverage Status](https://coveralls.io/repos/tsucchi/p5-Otogiri-Plugin-Count/badge.png?branch=master)](https://coveralls.io/r/tsucchi/p5-Otogiri-Plugin-Count?branch=master)
+[![Build Status](https://travis-ci.org/tsucchi/p5-Otogiri-Plugin-Count.svg?branch=master)](https://travis-ci.org/tsucchi/p5-Otogiri-Plugin-Count) [![Coverage Status](https://img.shields.io/coveralls/tsucchi/p5-Otogiri-Plugin-Count/master.svg?style=flat)](https://coveralls.io/r/tsucchi/p5-Otogiri-Plugin-Count?branch=master)
 # NAME
 
 Otogiri::Plugin::Count - Otogiri plugin to count rows in database.
