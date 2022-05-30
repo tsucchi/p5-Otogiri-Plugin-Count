@@ -13,7 +13,7 @@ our @EXPORT = qw(count);
 sub count {
     my ($self, $table, $column, $where, $opt) = @_;
 
-    if ( ref $column eq 'HASH' ) {
+    if ( ref $column eq 'HASH' || ref $column eq 'ARRAY' ) {
         $opt = $where;
         $where = $column;
         $column = '*';
